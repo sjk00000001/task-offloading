@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package craft;
+
+message Request {
+    string Req = 1;
+}
+
+message Reply {
+    string Rep = 1;
+}
+
+service GetChannel {
+    rpc GetChannel (Request) returns (Reply);
+}
